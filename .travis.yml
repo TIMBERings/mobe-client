@@ -1,2 +1,2 @@
 language: ruby
-script: rspec test/test.rb
+script: bundle exec rspec test/test.rb

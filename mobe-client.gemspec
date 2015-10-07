@@ -1,13 +1,16 @@
 Gem::Specification.new do |s|
-  s.name        = 'mobe-client'
-  s.version     = '0.0.1'
-  s.date        = '2015-10-07'
-  s.summary     = 'Mock Out Back End'
-  s.description = 'A simple hello world gem'
-  s.authors     = ['Aaron Humerickhouse']
-  s.email       = 'a.humerickhouse@gmail.com'
-  s.files       = ['lib/mobe-client.rb']
-  s.homepage    =
-      'http://github.com/TIMBERings/mobe-client'
-  s.license       = 'MIT'
+  s.name                  = 'mobe-client'
+  s.version               = '0.0.2'
+  s.date                  = '2015-10-07'
+  s.summary               = 'Mock Out Back End'
+  s.description           = 'Point your application to mobe-server to mock out the back end.
+                             This is ideal for unit testing the front end of your application using a
+                             tool like Selenium.'
+  s.authors               = ['Aaron Humerickhouse']
+  s.email                 = 'a.humerickhouse@gmail.com'
+  s.files                 = ['lib/mobe-client.rb']
+  s.homepage              = 'http://github.com/TIMBERings/mobe-client'
+  s.license               = 'MIT'
+  s.required_ruby_version = '>= 1.9.3'
+
 end

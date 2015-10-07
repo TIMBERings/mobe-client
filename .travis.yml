@@ -1,3 +1,2 @@
 language: ruby
-before_script: bundle install
-script: rspec
+script: bundle exec rspec test/test.rb

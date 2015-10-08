@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name                  = 'mobe-client'
-  s.version               = '0.0.4'
+  s.version               = '0.0.5'
   s.date                  = '2015-10-07'
   s.summary               = 'Mock Out Back End'
   s.description           = 'Point your application to mobe-server to mock out the back end.

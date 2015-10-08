@@ -153,11 +153,11 @@ private
 # Ensures configurations has the keys 'method', 'path', 'response', 'statusCode'
 # @param configurations [Hash]
 def check_for_register_arguments(configurations)
-  raise ArgumentError("Configurations doesn't have the correct keys: 'method', 'path','response', and 'statusCode'." ) unless (configurations.has_key?('method') && configurations.has_key?('path') && configurations.has_key?('response') && configurations.has_key?('statusCode'))
+  raise ArgumentError.new("Configurations doesn't have the correct keys: 'method', 'path','response', and 'statusCode'." ) unless (configurations.has_key?('method') && configurations.has_key?('path') && configurations.has_key?('response') && configurations.has_key?('statusCode'))
 end
 
 # Ensures configurations has the keys 'method', 'path'
 # @param configurations [Hash]
 def check_for_get_arguments(configurations)
-  raise ArgumentError("Configurations doesn't have the correct keys: 'method' and 'path'." ) unless (configurations.has_key?('method') && configurations.has_key?('path'))
+  raise ArgumentError.new("Configurations doesn't have the correct keys: 'method' and 'path'." ) unless (configurations.has_key?('method') && configurations.has_key?('path'))
 end

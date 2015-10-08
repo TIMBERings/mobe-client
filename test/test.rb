@@ -17,7 +17,7 @@ describe 'mobe-client' do
                 :headers => {'Accept' => '*/*', 'Content-Type' => 'application/json', 'User-Agent' => 'Ruby'})
           .to_return(:status => 200, :body => '', :headers => {})
 
-      register_mock_response('localhost', 8000, configurations.to_json)
+      register_mock_response('localhost', 8000, configurations)
       expect(WebMock).to have_requested(:post, url).with(:body => configurations.to_json).once
     end
   end
@@ -36,7 +36,7 @@ describe 'mobe-client' do
                 :headers => {'Accept' => '*/*', 'Content-Type' => 'application/json', 'User-Agent' => 'Ruby'})
           .to_return(:status => 200, :body => '', :headers => {})
 
-      unregister_mock_response('localhost', 8000, configurations.to_json)
+      unregister_mock_response('localhost', 8000, configurations)
       expect(WebMock).to have_requested(:post, url).with(:body => configurations.to_json).once
     end
   end
@@ -68,7 +68,7 @@ describe 'mobe-client' do
                 :headers => {'Accept' => '*/*', 'Content-Type' => 'application/json', 'User-Agent' => 'Ruby'})
           .to_return(:status => 200, :body => '', :headers => {})
 
-      register_intercept('localhost', 8000, configurations.to_json)
+      register_intercept('localhost', 8000, configurations)
       expect(WebMock).to have_requested(:post, url).with(:body => configurations.to_json).once
     end
   end
@@ -85,7 +85,7 @@ describe 'mobe-client' do
                 :headers => {'Accept' => '*/*', 'Content-Type' => 'application/json', 'User-Agent' => 'Ruby'})
           .to_return(:status => 200, :body => '', :headers => {})
 
-      unregister_intercept('localhost', 8000, configurations.to_json)
+      unregister_intercept('localhost', 8000, configurations)
       expect(WebMock).to have_requested(:post, url).with(:body => configurations.to_json).once
     end
   end
@@ -115,7 +115,7 @@ describe 'mobe-client' do
                 :headers => {'Accept' => '*/*', 'Content-Type' => 'application/json', 'User-Agent' => 'Ruby'})
           .to_return(:status => 200, :body => '', :headers => {})
 
-      get_intercept('localhost', 8000, configurations.to_json)
+      get_intercept('localhost', 8000, configurations)
       expect(WebMock).to have_requested(:post, url).with(:body => configurations.to_json).once
     end
   end

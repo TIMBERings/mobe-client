@@ -8,7 +8,7 @@ This client is made to be used with [mobe-server](http://github.com/TIMBERings/m
 
 Releases
 ==========
-[Release 0.0.6](https://rubygems.org/gems/mobe-client)
+[Release 0.0.7](https://rubygems.org/gems/mobe-client)
 
 Contributing
 ==============
